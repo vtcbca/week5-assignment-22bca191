@@ -15,15 +15,15 @@ for i in range(5):
 
 import csv
 with open('student.csv','w',newline='')as cfile:
-    file=c.writer(cfile)
-    file=csv.writerow(Attribute)
-    file=csv.writerow(records)
-    file=csv.writerows(l)
+    file=csv.writer(cfile)
+    file.writerow(Attribute)
+    file.writerow(records)
+    file.writerows(l)
 
 
 import csv
 with open('student.csv','r',newline='')as read_obj:
-    all_records=csv.reader(raed_obj)
+    all_records=csv.reader(read_obj)
     for records in all_records:
         print(records)
     
